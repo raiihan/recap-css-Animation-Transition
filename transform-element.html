@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Element</title>
+    <style>
+        .outer-box,
+        .inner-box,
+        .inner-box1,
+        .inner-box2 {
+            width: 160px;
+            height: 160px;
+            border: 2px solid orangered;
+
+        }
+
+        .outer-box {
+            background-color: khaki;
+        }
+
+        .inner-box {
+            background-color: plum;
+            transform: scale(.5);
+
+        }
+
+        .inner-box1 {
+            background-color: hotpink;
+            transform: rotate(45deg);
+        }
+
+        #rotate-scale {
+            transform: rotate(30deg) scale(0.6);
+        }
+
+        #translate {
+            /* transform: translate(50px, 50px); */
+            transform: translateX(50px) translateY(60px);
+
+        }
+
+        #rotate-scale-translate {
+            transform: translate(50px, 50px) rotate(30deg) scale(0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Its a transform element we will practice</h1>
+    <div class="outer-box">
+        <div class="inner-box">Div Box - 1</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box">Div Box - 2</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box">Div Box - 3</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box">Div Box - 4</div>
+    </div>
+    <h1>Transform Rotate</h1>
+    <div class="outer-box">
+        <div class="inner-box1">Div Box - 1</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box1">Div Box - 2</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box1">Div Box - 3</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box1">Div Box - 4</div>
+    </div>
+    <h1>Rotate / Scale</h1>
+    <div class="outer-box">
+        <div class="inner-box1" id="rotate-scale">Div Box - 4</div>
+    </div>
+    <h1>Translate</h1>
+    <div class="outer-box">
+        <div class="inner-box2" id="translate">Div Box - 4</div>
+    </div>
+    <h1>Rotate / Scale / Translate</h1>
+    <div class="outer-box">
+        <div class="inner-box1" id="rotate-scale-translate">Div Box - 4</div>
+    </div>
+
+</body>
+
+</html>
