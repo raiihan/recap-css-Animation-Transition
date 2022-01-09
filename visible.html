@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visible</title>
+    <h2>(visibility: hidden;) (display: none;)</h2>
     <style>
         .box {
             border: 1px solid springgreen;
@@ -19,7 +20,7 @@
 
         #box-2 {
             background-color: silver;
-            overflow: hidden;
+            visibility: hidden;
         }
 
         #box-3 {
@@ -28,6 +29,11 @@
 
         #box-4 {
             background-color: darkkhaki;
+            display: none;
+        }
+
+        #box-5 {
+            background-color: lightcoral;
         }
     </style>
 </head>
@@ -38,6 +44,7 @@
     <div class="box" id="box-2"></div>
     <div class="box" id="box-3"></div>
     <div class="box" id="box-4"></div>
+    <div class="box" id="box-5"></div>
 </body>
 
 </html>
