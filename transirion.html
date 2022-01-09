@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box,
+        .box1 {
+            width: 150px;
+            height: 150px;
+            border: 2px solid lightsalmon;
+            background-color: magenta;
+
+        }
+
+        .transition {
+            transition: width 5s;
+        }
+
+        .transition2 {
+            transition: width 5s, height 5s;
+        }
+
+        .transition3 {
+            transition: width 5s ease, height 5s linear;
+        }
+
+        .transition4 {
+            transition: width 5s ease 2s, height 5s linear 3s;
+        }
+
+        .transition5 {
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>one property Transition</h1>
+    <div class="box transition">
+        <h2>Transition</h2>
+    </div>
+    <h1>two property Transition</h1>
+    <div class="box transition2">
+        <h2>Transition</h2>
+    </div>
+    <h1>ease, linear Transition</h1>
+    <div class="box transition3">
+        <h2>Transition</h2>
+    </div>
+    <h1>Delay property Transition</h1>
+    <div class="box transition4">
+        <h2>Transition</h2>
+    </div>
+    <h1>Three property Transition</h1>
+    <div class="box1 transition5">
+        <h2>Transition</h2>
+    </div>
+</body>
+
+</html>
