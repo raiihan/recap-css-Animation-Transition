@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .welcome-msg {
+            background-color: palevioletred;
+            height: 200px;
+        }
+
+        @media only screen and (max-width: 688px) {
+            .welcome-msg {
+                background-color: peru;
+                text-align: center;
+                height: 400px;
+            }
+        }
+
+        @media only screen and (min-width: 689px) and (max-width: 992px) {
+            .welcome-msg {
+                background-color: saddlebrown;
+                text-align: right;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="welcome-msg">
+        <h1>Welcome Our site</h1>
+    </section>
+</body>
+
+</html>
